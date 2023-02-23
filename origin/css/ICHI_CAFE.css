@@ -1,0 +1,495 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+
+body {
+    color: #24292e;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*------top menu-------*/
+#top .top-menu {
+    position: relative;
+    width: 100%;
+}
+
+#top .logo {
+    position: absolute;
+    top: 0px;
+    left: 0;
+}
+
+#top .logo img {
+    width: 110px;
+    height: 110px;
+}
+
+#top .logo p {
+    position: absolute;
+    font-family: 'Castellar';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 3.125rem;
+    line-height: 19px;
+    top: 10px;
+    left: 90px;
+}
+
+#top nav {
+    position: absolute;
+    top: 0;
+    left: 70%;
+    right: 5%;
+    }
+
+#top nav .wrapper ul {
+    display: flex;
+    list-style:none;
+    justify-content: flex-end;
+    font-size: 2.25rem;
+}
+
+#top nav .wrapper li {
+    font-family: 'Bodoni MT';
+    font-style: normal;
+    font-weight: 400;
+    margin: 10px 0 0 10%;
+}
+
+#top nav .wrapper li:last-child {
+    margin-right: 0;
+}
+
+#top nav .wrapper li a{
+    color: #fff;
+}
+
+#top nav .wrapper li a:hover {
+    color: #39c0ff;
+}
+
+/*-----topix-----*/
+#topix .title{
+    font-family: 'Bodoni MT';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+#info {
+    display:flex;
+    justify-content: center;
+}
+
+#info img {
+    width: 25%;
+    height: 30%;
+    border-radius: 15px;
+}
+
+#info .topix-text {
+    margin: -20px 0 0 5%;
+}
+
+#info .topix-text p {
+    font-family: 'Bodoni MT';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 1.5rem;
+    line-height: 25px;
+    text-align: center;
+    
+}
+
+#info .news {
+    border: 1px solid #c3c3c3;
+    margin: -85px 0 0 5%;
+    padding: 0 20px;
+}
+
+#info .news .news_title {
+    font-family: 'Bodoni MT';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 2.0rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#info .news .grid p {
+    font-family: 'Bodoni MT';
+    font-style: normal;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+#info .news .grid .left {
+    margin-bottom: -15px;
+}
+
+#info .news .grid .right {
+    margin-bottom: -15px;
+}
+
+#info .news a {
+    color: #000;
+}
+
+#info .news .more {
+    text-align: right;
+}
+
+#info .news .more a{
+    color: #3484fd;
+}
+
+#info .news a:hover {
+    color: #39c0ff;
+}
+
+/*----menu----*/
+#menu {
+    max-width: 1330px;
+    padding: 90px 16px 0 16px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#menu .main-title{
+    font-family: 'Bodoni MT';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 3.25rem;
+    text-align: center;
+    margin-bottom: 100px;
+}
+#menu .title {
+    font-family: 'Bodoni MT';
+    font-style: normal;
+    font-size: 2.5rem;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.menu-name {
+    font-family: 'Bodoni MT';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 1.5rem;
+    line-height: 16px;
+    text-align: center;
+}
+
+#menu .more {
+    font-family: 'Bodoni MT';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 1.25rem;
+    line-height: 16px;
+    text-align: right;
+}
+
+#menu .more a {
+    color: #3484fd;
+}
+
+
+/*----drink menu----*/
+#drink {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+#drink img {
+    width: 85%;
+    height: 85%;
+    border-radius: 15px;
+}
+
+/*----meal menu----*/
+#meal {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+#meal img {
+    width: 85%;
+    height: 85%;
+    border-radius: 15px;
+}
+
+/*----cake menu----*/
+#cake {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+#cake img {
+    width: 85%;
+    height: 85%;
+    border-radius: 15px;
+}
+
+/*-------location-------*/
+#location {
+    max-width: 1330px;
+    padding: 90px 16px 100px 16px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#location .title{
+    font-family: 'Bodoni MT';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 3.25rem;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+#location .map{
+    margin-bottom: 20px;
+    
+}
+
+iframe {
+    width: 100%; 
+    height: 675px;
+    border: 0;
+}
+
+#location .address{
+    font-family: 'Bodoni MT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 16px;
+    text-align: left;
+}
+
+/*----footer----*/
+#footer p{
+    text-align: center;
+}
+
+/*-----------------------------
+SP
+------------------------------*/
+@media screen and (max-width: 1000px) {
+    /*------トップメニュー-----*/
+    #top nav {
+        display: block;
+        position:fixed;
+        top: 30px;
+        left: 0;
+        bottom: 0;
+        overflow-x: hidden;
+        overflow-y: auto;
+        transition: all .5s;
+        z-index: 3;
+        opacity: 0;
+}
+
+    #top nav.open {
+        opacity: 1;
+    }
+
+    #top nav .wrapper ul {
+        flex-direction: column;
+    }
+
+    #top nav .wrapper ul li {
+        text-align: center;
+    }
+
+    
+    /*-----ハンバーガーメニュー-----*/
+    #top .btn {
+        display: block;
+        position: fixed;
+        top: 30px;
+        right: 5%;
+        width: 30px;
+        height: 30px;
+        transition: all 0.5s;
+        cursor:pointer;
+        z-index: 3;
+}
+
+    #top .btn.open {
+        right:5%;
+    }
+
+    #top .btn span {
+        display:block;
+        position: absolute;
+        right: 0;
+        width: 30px;
+        height: 2px;
+        background-color: #f0f0f0;
+        border-radius: 4px;
+        transition: all  .5s;
+    }
+
+    #top .btn span:first-of-type {
+        top: 4px;
+    }
+
+    #top .btn span:nth-of-type(2) {
+        top: 14px;
+    }
+
+    #top .btn span:last-of-type {
+        bottom: 4px;
+    }
+    
+    #top .btn.open span:first-of-type {
+        top: 50%;
+        transform: rotate(45deg);
+    }
+
+    #top .btn.open span:nth-of-type(2) {
+        opacity: 0;
+    }
+
+    #top .btn.open span:last-of-type {
+        top: 50%;
+        transform: rotate(-45deg);
+}
+
+    #top .mask {
+        display: none;
+        transition: all 0.5s;
+}
+
+    #top .mask.open {
+        display:block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: .8;
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    /*------topix SP------*/
+    #topix .title {
+        margin-bottom: 30px;
+    }
+
+    #info {
+        flex-wrap: wrap;
+    }
+
+    #info img {
+        margin-bottom: 30px;
+    }
+
+    #info .news {
+        margin: 30px 0 0 0;
+        padding: 0 30px;
+    }
+
+    #info .news .grid {
+        display: grid;
+        grid-template-columns: 1fr 80%;
+        margin-top: -30px;
+    }
+
+    #info .news .grid .right {
+        margin-left: 30px;
+    }
+
+
+    #info .news .more {
+        text-align: center;
+    }
+
+    /*----drink menu----*/
+    #menu {
+        margin-top: -40px;
+    }
+
+    #menu .more{
+        margin-top: -60px;
+    }
+
+    #drink {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 50px;
+    }
+
+    #drink .caffee, .tea, .cafelate, .cocoa{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #drink img{
+        width:90%;
+        height: 100%;
+    }
+
+    #drink .menu-name {
+        margin-left: -40px;
+    }
+
+    /*----meal menu----*/
+    #meal {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 50px;
+    }
+
+    #meal .hotsand, .pasta, .omrice, .carry {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #meal img{
+        width:90%;
+        height: 100%;
+    }
+
+    #meal .menu-name {
+        margin-left: -40px;
+    }
+
+    /*----cake----*/
+    #cake {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 50px;
+    }
+
+    #cake .cheesecake, .chococake, .monbran, .pancake {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #cake img{
+        width:90%;
+        height: 100%;
+    }
+
+    #cake .menu-name {
+        margin-left: -40px;
+    }
+}
