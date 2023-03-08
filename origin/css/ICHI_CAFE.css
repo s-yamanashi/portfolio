@@ -302,10 +302,12 @@ SP
         transition: all .5s;
         z-index: 3;
         opacity: 0;
+        visibility: hidden;
 }
 
     #top nav.open {
         opacity: 1;
+        visibility: visible;
     }
 
     #top nav .wrapper ul {
@@ -435,11 +437,7 @@ SP
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin-left: 50px;
-    }
-
-    #drink .caffee, .tea, .cafelate, .cocoa{
-        display: grid;
-        grid-template-columns: 1fr;
+        grid-gap: 110px 10px;
     }
 
     #drink img{
