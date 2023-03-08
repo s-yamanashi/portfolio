@@ -291,6 +291,17 @@ SP
 ------------------------------*/
 @media screen and (max-width: 1000px) {
     /*------トップメニュー-----*/
+    #top .logo img {
+        width: 90px;
+        height: 90px;
+    }
+    
+    #top .logo p {
+        font-size: 2.5rem;
+        top: 10px;
+        left: 90px;
+    }
+    
     #top nav {
         display: block;
         position:fixed;
@@ -445,12 +456,8 @@ SP
     #meal {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        margin-left: 50px;
-    }
-
-    #meal .hotsand, .pasta, .omrice, .carry {
-        display: grid;
-        grid-template-columns: 1fr;
+        grid-gap: 110px 10px;
+        margin-bottom: 120px;
     }
 
     #meal img{
@@ -458,28 +465,16 @@ SP
         height: 100%;
     }
 
-    #meal .menu-name {
-        margin-left: -40px;
-    }
-
     /*----cake----*/
     #cake {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        margin-left: 50px;
-    }
-
-    #cake .cheesecake, .chococake, .monbran, .pancake {
-        display: grid;
-        grid-template-columns: 1fr;
+        grid-gap: 110px 10px;
+        margin-bottom: 120px;
     }
 
     #cake img{
         width:90%;
         height: 100%;
-    }
-
-    #cake .menu-name {
-        margin-left: -40px;
     }
 }
