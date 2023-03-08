@@ -429,14 +429,11 @@ SP
         margin-top: -40px;
     }
 
-    #menu .more{
-        margin-top: -60px;
-    }
-
     #drink {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 110px 10px;
+         margin-bottom: 120px;
     }
 
     #drink img{
