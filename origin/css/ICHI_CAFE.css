@@ -287,7 +287,7 @@ iframe {
 }
 
 /*-----------------------------
-SP
+TB
 ------------------------------*/
 @media screen and (max-width: 1000px) {
     /*------トップメニュー-----*/
@@ -402,7 +402,7 @@ SP
         cursor: pointer;
     }
 
-    /*------topix SP------*/
+    /*------topix TB------*/
     #topix .title {
         margin-bottom: 30px;
     }
@@ -445,6 +445,209 @@ SP
         grid-template-columns: 1fr 1fr;
         grid-gap: 110px 10px;
          margin-bottom: 120px;
+    }
+
+    #drink img{
+        width:90%;
+        height: 100%;
+    }
+
+    /*----meal menu----*/
+    #meal {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 110px 10px;
+        margin-bottom: 120px;
+    }
+
+    #meal img{
+        width:90%;
+        height: 100%;
+    }
+
+    /*----cake----*/
+    #cake {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 110px 10px;
+        margin-bottom: 120px;
+    }
+
+    #cake img{
+        width:90%;
+        height: 100%;
+    }
+}
+
+/*-----------------------------
+SP
+------------------------------*/
+@media screen and (max-width: 480px) {
+    /*------トップメニュー-----*/
+    #top .logo img {
+        width: 70px;
+        height: 70px;
+    }
+    
+    #top .logo p {
+        font-size: 1.25rem;
+        top: 10px;
+        left: 60px;
+    }
+
+    #top nav {
+        display: block;
+        position:fixed;
+        top: 30px;
+        left: 0;
+        bottom: 0;
+        overflow-x: hidden;
+        overflow-y: auto;
+        transition: all .5s;
+        z-index: 3;
+        opacity: 0;
+        visibility: hidden;
+}
+
+    #top nav.open {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    #top nav .wrapper ul {
+        flex-direction: column;
+    }
+
+    #top nav .wrapper ul li {
+        text-align: center;
+    }
+
+    
+    /*-----ハンバーガーメニュー-----*/
+    #top .btn {
+        display: block;
+        position: fixed;
+        top: 30px;
+        right: 5%;
+        width: 30px;
+        height: 30px;
+        transition: all 0.5s;
+        cursor:pointer;
+        z-index: 3;
+}
+
+    #top .btn.open {
+        right:5%;
+    }
+
+    #top .btn span {
+        display:block;
+        position: absolute;
+        right: 0;
+        width: 30px;
+        height: 2px;
+        background-color: #f0f0f0;
+        border-radius: 4px;
+        transition: all  .5s;
+    }
+
+    #top .btn span:first-of-type {
+        top: 4px;
+    }
+
+    #top .btn span:nth-of-type(2) {
+        top: 14px;
+    }
+
+    #top .btn span:last-of-type {
+        bottom: 4px;
+    }
+    
+    #top .btn.open span:first-of-type {
+        top: 50%;
+        transform: rotate(45deg);
+}
+
+    #top .btn.open span:nth-of-type(2) {
+        opacity: 0;
+    }
+
+    #top .btn.open span:last-of-type {
+        top: 50%;
+        transform: rotate(-45deg);
+}
+
+    #top .mask {
+        display: none;
+        transition: all 0.5s;
+}
+
+    #top .mask.open {
+        display:block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: .8;
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    /*------topix TB------*/
+    #topix .title {
+        margin-bottom: 30px;
+    }
+
+    #info {
+        flex-wrap: wrap;
+    }
+
+    #info img {
+        width: 60%;
+        height: 60%;
+        margin-bottom: 30px;
+    }
+
+    #info .topix-text{
+        font-size: 1rem;
+        line-height: 25px;
+        text-align: center;
+    
+    }
+
+    #info .news {
+        margin: 30px 0 0 0;
+        padding: 0 30px;
+    }
+
+    #info .news .grid {
+        display: grid;
+        grid-template-columns: 1fr 80%;
+        margin-top: -30px;
+    }
+
+    #info .news .grid .right {
+        margin-left: 30px;
+    }
+
+
+    #info .news .more {
+        text-align: center;
+    }
+
+    /*----drink menu----*/
+    #menu {
+        margin-top: -30px;
+    }
+
+
+    #drink {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 110px 10px;
+        margin-bottom: 120px;
     }
 
     #drink img{
