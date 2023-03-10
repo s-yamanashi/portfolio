@@ -612,8 +612,7 @@ SP
 
     #info .topix-text p{
         font-size: 1.125rem;
-        line-height: 25px;
-        text-align: center;
+        text-align: left;
     
     }
 
