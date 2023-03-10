@@ -632,9 +632,12 @@ SP
         font-size: 1.25rem;
     }
 
-
+    #info .news .grid .left {
+        margin-left: -10px;
+    }
+    
     #info .news .grid .right {
-        margin-left: 30px;
+        margin-left: 20px;
     }
 
 
