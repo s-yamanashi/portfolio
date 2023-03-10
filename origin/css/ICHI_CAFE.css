@@ -611,8 +611,7 @@ SP
     }
 
     #info .topix-text p{
-        font-weight: 100;
-        font-size: 1rem;
+        font-size: 1.125rem;
         line-height: 25px;
         text-align: center;
     
@@ -630,7 +629,7 @@ SP
     }
     
     #info .news .grid p{
-        font-size: 1.25rem;
+        font-size: 1.125rem;
     }
 
     #info .news .grid .left {
