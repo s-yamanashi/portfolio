@@ -507,7 +507,7 @@ SP
         z-index: 3;
         opacity: 0;
         visibility: hidden;
-}
+    }
 
     #top nav.open {
         opacity: 1;
@@ -534,7 +534,7 @@ SP
         transition: all 0.5s;
         cursor:pointer;
         z-index: 3;
-}
+    }
 
     #top .btn.open {
         right:5%;
@@ -566,7 +566,7 @@ SP
     #top .btn.open span:first-of-type {
         top: 50%;
         transform: rotate(45deg);
-}
+    }
 
     #top .btn.open span:nth-of-type(2) {
         opacity: 0;
@@ -575,12 +575,12 @@ SP
     #top .btn.open span:last-of-type {
         top: 50%;
         transform: rotate(-45deg);
-}
+    }
 
     #top .mask {
         display: none;
         transition: all 0.5s;
-}
+    }
 
     #top .mask.open {
         display:block;
@@ -595,7 +595,7 @@ SP
         cursor: pointer;
     }
 
-    /*------topix TB------*/
+    /*------topix SP------*/
     #topix .title {
         margin-bottom: 30px;
     }
@@ -649,42 +649,68 @@ SP
         margin-top: -30px;
     }
 
+    .menu-name {
+        font-size: 1.125rem;
+        text-align: center;
+    }
 
     #drink {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 110px 10px;
-        margin-bottom: 120px;
+        grid-gap: 90px 10px;
+        margin-bottom: 90px;
     }
 
     #drink img{
-        width:90%;
-        height: 100%;
+        width:100%;
+        height: 70%;
     }
 
     /*----meal menu----*/
     #meal {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 110px 10px;
-        margin-bottom: 120px;
+        grid-gap: 90px 10px;
+        margin-bottom: 90px;
     }
 
     #meal img{
-        width:90%;
-        height: 100%;
+        width:100%;
+        height: 70%;
     }
 
     /*----cake----*/
     #cake {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 110px 10px;
-        margin-bottom: 120px;
+        grid-gap: 90px 10px;
+        margin-bottom: 90px;
     }
 
     #cake img{
-        width:90%;
-        height: 100%;
+        width:100%;
+        height: 70%;
+    }
+    
+    /*-------location-------*/
+    #location {
+        padding: 0 16px 50px 16px;
+    }
+    
+    #location .title {
+        margin-bottom: 80px;
+    }
+    
+    #logation .map {
+        margin-bottom: 20px;
+    }
+    
+    iframe {
+        width: 60%;
+        height: 60%;
+    }
+    
+    #location .address {
+        font-size: 1.125rem;
     }
 }
