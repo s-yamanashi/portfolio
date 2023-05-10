@@ -1,0 +1,520 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+
+body {
+    color: #24292e;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*------top menu-------*/
+#top {
+    position: relative;
+}
+#top .logo {
+    display: flex;
+    margin-top: -8px;
+    margin-left: -8px;
+}
+
+#top .logo a {
+    color: #000;
+}
+
+#top .logo img {
+    width: 110px;
+    height: 110px;
+}
+
+#top .logo p {
+    position: absolute;
+    font-family: 'Castellar';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 3.125rem;
+    line-height: 19px;
+    top: 10px;
+    left: 82px;
+}
+
+#top nav {
+    position: absolute;
+    top: 0;
+    left: 70%;
+    right: 4.6%;
+    }
+
+#top nav .wrapper ul {
+    display: flex;
+    list-style:none;
+    justify-content: flex-end;
+    font-size: 2.25rem;
+}
+
+#top nav .wrapper li {
+    font-family: 'Bodoni MT';
+    font-style: normal;
+    font-weight: 400;
+    margin: 10px 0 0 10%;
+}
+
+#top nav .wrapper li:last-child {
+    margin-right: 0;
+}
+
+#top nav .wrapper li a{
+    color: #000;
+}
+
+#top nav .wrapper li a:hover {
+    color: #39c0ff;
+}
+
+/*----menu----*/
+#menu {
+    max-width: 1330px;
+    padding: 90px 16px 0 16px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#menu .main-title{
+    font-family: 'Bodoni MT';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 3.25rem;
+    text-align: center;
+    margin-bottom: 100px;
+}
+#menu .title {
+    font-family: 'Bodoni MT';
+    font-style: normal;
+    font-size: 2.5rem;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.menu-name {
+    font-family: 'Bodoni MT';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 1.5rem;
+    line-height: 16px;
+    text-align: center;
+}
+
+/*----drink menu----*/
+#drink {
+    display: flex;
+    width: 1330px;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.caffee,.tea,.cafelate,.cocoa {
+    flex-basis: 332px;
+    padding-bottom: 70px;
+}
+
+#drink img {
+    width: 85%;
+    height: 85%;
+    border-radius: 15px;
+}
+
+/*----meal menu----*/
+#meal {
+    display: flex;
+    width: 1330px;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.hotsand,.pasta,.omrice,.carry {
+    flex-basis: 332px;
+    padding-bottom: 70px;
+}
+
+#meal img {
+    width: 85%;
+    height: 85%;
+    border-radius: 15px;
+}
+
+/*----cake menu----*/
+#cake {
+    display: flex;
+    width: 1330px;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.cheesecake,.chococake,.monbran,.pancake {
+    flex-basis: 332px;
+    padding-bottom: 70px;
+}
+
+#cake img {
+    width: 85%;
+    height: 85%;
+    border-radius: 15px;
+}
+
+/*----footer----*/
+#footer p{
+    text-align: center;
+}
+
+/*-----------------------------
+TB
+------------------------------*/
+@media screen and (max-width: 1000px) {
+    /*------トップメニュー-----*/
+    #top .logo img {
+        width: 90px;
+        height: 90px;
+    }
+    
+    #top .logo p {
+        font-size: 2.5rem;
+        top: 10px;
+        left: 90px;
+    }
+
+    #top nav {
+        display: block;
+        position:fixed;
+        top: 30px;
+        left: 0;
+        bottom: 0;
+        overflow-x: hidden;
+        overflow-y: auto;
+        transition: all .5s;
+        z-index: 3;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    #top nav.open {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    #top nav .wrapper ul {
+        flex-direction: column;
+    }
+
+    #top nav .wrapper ul li {
+        text-align: center;
+    }
+
+    #top nav .wrapper li a{
+        color: #fff;
+    }
+    
+    /*-----ハンバーガーメニュー-----*/
+    #top .btn {
+        display: block;
+        position: fixed;
+        top: 30px;
+        right: 5%;
+        width: 30px;
+        height: 30px;
+        transition: all 0.5s;
+        cursor:pointer;
+        z-index: 3;
+    }
+
+    #top .btn.open {
+        right:5%;
+    }
+
+    #top .btn span {
+        display:block;
+        position: absolute;
+        right: 0;
+        width: 30px;
+        height: 2px;
+        background-color: #f0f0f0;
+        border-radius: 4px;
+        transition: all  .5s;
+    }
+
+    #top .btn span:first-of-type {
+        top: 4px;
+    }
+
+    #top .btn span:nth-of-type(2) {
+        top: 14px;
+    }
+
+    #top .btn span:last-of-type {
+        bottom: 4px;
+    }
+    
+    #top .btn.open span:first-of-type {
+        top: 50%;
+        transform: rotate(45deg);
+    }
+
+    #top .btn.open span:nth-of-type(2) {
+        opacity: 0;
+    }
+
+    #top .btn.open span:last-of-type {
+        top: 50%;
+        transform: rotate(-45deg);
+    }
+
+    #top .mask {
+        display: none;
+        transition: all 0.5s;
+}
+
+    #top .mask.open {
+        display:block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: .8;
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    /*----drink menu----*/
+    #menu {
+        margin-top: -30px;
+    }
+
+
+    #drink {
+        display: grid;
+        flex-wrap: nowrap;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 110px 10px;
+        margin-bottom: 120px;
+    }
+
+    #drink img{
+        width:90%;
+        height: 100%;
+    }
+
+    /*----meal menu----*/
+    #meal {
+        display: grid;
+        flex-wrap: nowrap;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 110px 10px;
+        margin-bottom: 120px;
+    }
+
+    #meal img{
+        width:90%;
+        height: 100%;
+    }
+
+    /*----cake----*/
+    #cake {
+        display: grid;
+        flex-wrap: nowrap;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 110px 10px;
+        margin-bottom: 120px;
+    }
+
+    #cake img{
+        width:90%;
+        height: 100%;
+    }
+}
+
+/*-----------------------------
+SP
+------------------------------*/
+@media screen and (max-width: 480px) {
+    /*------トップメニュー-----*/
+    #top .logo img {
+        width: 70px;
+        height: 70px;
+    }
+    
+    #top .logo p {
+        font-size: 1.25rem;
+        top: 10px;
+        left: 60px;
+    }
+
+    #top nav {
+        display: block;
+        position:fixed;
+        top: 30px;
+        left: 0;
+        bottom: 0;
+        overflow-x: hidden;
+        overflow-y: auto;
+        transition: all .5s;
+        z-index: 3;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    #top nav.open {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    #top nav .wrapper ul {
+        flex-direction: column;
+    }
+
+    #top nav .wrapper ul li {
+        text-align: center;
+    }
+
+    #top nav .wrapper li a{
+        color: #fff;
+    }
+
+    
+    /*-----ハンバーガーメニュー-----*/
+    #top .btn {
+        display: block;
+        position: fixed;
+        top: 30px;
+        right: 5%;
+        width: 30px;
+        height: 30px;
+        transition: all 0.5s;
+        cursor:pointer;
+        z-index: 3;
+    }
+
+    #top .btn.open {
+        right:5%;
+    }
+
+    #top .btn span {
+        display:block;
+        position: absolute;
+        right: 0;
+        width: 30px;
+        height: 2px;
+        background-color: #f0f0f0;
+        border-radius: 4px;
+        transition: all  .5s;
+    }
+
+    #top .btn span:first-of-type {
+        top: 4px;
+    }
+
+    #top .btn span:nth-of-type(2) {
+        top: 14px;
+    }
+
+    #top .btn span:last-of-type {
+        bottom: 4px;
+    }
+    
+    #top .btn.open span:first-of-type {
+        top: 50%;
+        transform: rotate(45deg);
+    }
+
+    #top .btn.open span:nth-of-type(2) {
+        opacity: 0;
+    }
+
+    #top .btn.open span:last-of-type {
+        top: 50%;
+        transform: rotate(-45deg);
+    }
+
+    #top .mask {
+        display: none;
+        transition: all 0.5s;
+    }
+
+    #top .mask.open {
+        display:block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: .8;
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    /*----drink menu----*/
+    #menu {
+        margin-top: -30px;
+    }
+
+    .menu-name {
+        font-size: 1.125rem;
+        text-align: center;
+    }
+
+    #drink {
+        display: grid;
+        flex-wrap: nowrap;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 90px 10px;
+        margin-bottom: 90px;
+    }
+
+    #drink img{
+        width: 100%;
+        height: 70%;
+    }
+
+    /*----meal menu----*/
+    #meal {
+        display: grid;
+        flex-wrap: nowrap;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 90px 10px;
+        margin-bottom: 90px;
+    }
+
+    #meal img {
+        width: 100%;
+        height: 70%;
+    }
+
+    /*----cake----*/
+    #cake {
+        display: grid;
+        flex-wrap: nowrap;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 90px 10px;
+        margin-bottom: 90px;
+    }
+
+    #cake img {
+        width: 100%;
+        height: 70%;
+    }
+}

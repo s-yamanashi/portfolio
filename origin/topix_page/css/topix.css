@@ -1,0 +1,258 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+
+body {
+    color: #24292e;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*------top menu-------*/
+#top {
+    position: relative;
+}
+#top .logo {
+    display: flex;
+    margin-top: -8px;
+    margin-left: -8px;
+}
+
+#top .logo a {
+    color: #000;
+}
+
+#top .logo img {
+    width: 110px;
+    height: 110px;
+}
+
+#top .logo p {
+    position: absolute;
+    font-family: 'Castellar';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 3.125rem;
+    line-height: 19px;
+    top: 10px;
+    left: 82px;
+}
+
+#top nav {
+    position: absolute;
+    top: 0;
+    left: 70%;
+    right: 4.6%;
+    }
+
+#top nav .wrapper ul {
+    display: flex;
+    list-style:none;
+    justify-content: flex-end;
+    font-size: 2.25rem;
+}
+
+#top nav .wrapper li {
+    font-family: 'Bodoni MT';
+    font-style: normal;
+    font-weight: 400;
+    margin: 10px 0 0 10%;
+}
+
+#top nav .wrapper li:last-child {
+    margin-right: 0;
+}
+
+#top nav .wrapper li a{
+    color: #000;
+}
+
+#top nav .wrapper li a:hover {
+    color: #39c0ff;
+}
+
+/*----topix----*/
+#topix {
+    max-width: 960px;
+    padding: 0 4% 240px 4%;
+    margin: 0 auto;
+}
+
+#topix .main-title{
+    font-family: 'Bodoni MT';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 3.25rem;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+#topix .list {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: solid 1px #c7c7c7;
+    margin-bottom: 50px;
+}
+
+#topix .list dt {
+    width: 20%;
+    border-bottom: solid 1px #c7c7c7;
+    padding: 30px 15px;
+}
+
+#topix .list dd {
+    width:80%;
+    border-bottom: solid 1px #c7c7c7;
+    padding: 30px 15px;
+    margin-left: -7%;
+}
+
+/*----footer----*/
+#footer p{
+    text-align: center;
+}
+
+/*-----------------------------
+TB,SP
+------------------------------*/
+@media screen and (max-width: 1000px) {
+    /*------トップメニュー-----*/
+    #top .logo img {
+        width: 70px;
+        height: 70px;
+    }
+    
+    #top .logo p {
+        font-size: 1.25rem;
+        top: 10px;
+        left: 60px;
+    }
+
+    #top nav {
+        display: block;
+        position:fixed;
+        top: 30px;
+        left: 0;
+        bottom: 0;
+        overflow-x: hidden;
+        overflow-y: auto;
+        transition: all .5s;
+        z-index: 3;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    #top nav.open {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    #top nav .wrapper ul {
+        flex-direction: column;
+    }
+
+    #top nav .wrapper ul li {
+        text-align: center;
+    }
+
+    #top nav .wrapper li a{
+        color: #fff;
+    }
+    
+    /*-----ハンバーガーメニュー-----*/
+    #top .btn {
+        display: block;
+        position: fixed;
+        top: 30px;
+        right: 5%;
+        width: 30px;
+        height: 30px;
+        transition: all 0.5s;
+        cursor:pointer;
+        z-index: 3;
+    }
+
+    #top .btn.open {
+        right:5%;
+    }
+
+    #top .btn span {
+        display:block;
+        position: absolute;
+        right: 0;
+        width: 30px;
+        height: 2px;
+        background-color: #f0f0f0;
+        border-radius: 4px;
+        transition: all  .5s;
+    }
+
+    #top .btn span:first-of-type {
+        top: 4px;
+    }
+
+    #top .btn span:nth-of-type(2) {
+        top: 14px;
+    }
+
+    #top .btn span:last-of-type {
+        bottom: 4px;
+    }
+    
+    #top .btn.open span:first-of-type {
+        top: 50%;
+        transform: rotate(45deg);
+    }
+
+    #top .btn.open span:nth-of-type(2) {
+        opacity: 0;
+    }
+
+    #top .btn.open span:last-of-type {
+        top: 50%;
+        transform: rotate(-45deg);
+    }
+
+    #top .mask {
+        display: none;
+        transition: all 0.5s;
+    }
+
+    #top .mask.open {
+        display:block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: .8;
+        z-index: 2;
+        cursor: pointer;
+    }
+
+
+    /*----topix----*/
+    #topix .list dl {
+        flex-direction: column;
+    }
+    #topix .list dt {
+        width: 100%;
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+    
+    #topix .list dd {
+        width: 100%;
+        padding-top: 0;
+        margin: 0;
+    }
+}
