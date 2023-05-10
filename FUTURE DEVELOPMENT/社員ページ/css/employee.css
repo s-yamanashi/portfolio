@@ -1,0 +1,460 @@
+@charset "UTF-8";
+html {
+    font-size: 100%;
+}
+
+body {
+    background-color: #fafafa;
+    color: #333;
+}
+
+
+
+/*------------------------------------
+header
+------------------------------------*/
+#header {
+    position: relative;
+    display: flex;
+    padding: 14px 0 14px 20px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    margin: -10px -10px;
+    z-index: 20;
+}
+
+#header img{
+    display: block;
+    width: 116px;
+    height: 38px;
+}
+
+#navi {
+    position: absolute;
+    right:0;
+}
+.menu {
+    display: flex;
+}
+
+.menu a {
+    color: #333;
+    text-decoration: none;
+}
+
+.menu li {
+    list-style: none;
+    margin-right: 60px;
+}
+
+#navi img{
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.SP-menu {
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+} 
+
+/*-----------------------------------------
+main
+-----------------------------------------*/
+main img {
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.border-bottom {
+    border-bottom: solid 4px #fab805;
+}
+
+.color {
+    color: #ef9b38;
+}
+
+.position-name {
+    text-align: left;
+    list-style: none;
+    border-bottom: solid 1px #333;
+}
+
+.position {
+    font-size: 0.875rem;
+}
+
+.name {
+    font-size: 1rem;
+    margin-top: -10px;
+}
+
+.frame {
+    position: relative;
+    z-index: 10;
+}
+/*-----------------------------------------
+代表 CEO
+-----------------------------------------*/
+#ceo {
+    margin-top: 220px;
+}
+
+#ceo .title{
+    font-size: 1.625rem;
+    text-align: right;
+    margin-right: 270px;
+    margin-bottom: 44px;
+}
+
+.greeting {
+    width: 70%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 105px 92px;
+    margin: 0 auto 0 auto;
+}
+
+.greeting .text {
+    width: 100%;
+    max-width: 400px;
+    margin-right: 90px;
+}
+
+.frame .background {
+    position: absolute;
+    width: 100%;
+    height: 260px;
+    top: 65%;
+    left:0;
+    background-color: #e6e6e6;
+    z-index: -1;
+}
+
+/*-----------------------------------------
+社員 MEMBER
+-----------------------------------------*/
+.member {
+    margin-top: 268px;
+}
+
+.member .title{
+    font-size: 1.625rem;
+    text-align: right;
+    margin-right: 270px;
+    margin-bottom: 44px;
+}
+
+/*------------------------------------
+画像　左
+------------------------------------*/
+.member-left {
+    width: 70%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 105px 92px;
+    margin: 0 auto 0 auto;
+}
+
+.member-left .text {
+    width: 100%;
+    max-width: 400px;
+    margin-left: 90px;
+}
+
+.frame .background {
+    position: absolute;
+    width: 100%;
+    height: 260px;
+    top: 65%;
+    left: 0;
+    background-color: #e6e6e6;
+    z-index: -1;
+}
+
+.frame .background-last {
+    position: absolute;
+    width: 100%;
+    height: 260px;
+    top: 65%;
+    left: 0;
+    background-color: #e6e6e6;
+    z-index: -1;
+}
+
+/*------------------------------------
+画像　右
+------------------------------------*/
+
+.member-right {
+    width: 70%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 105px 92px;
+    margin: 200px auto 200px auto;
+}
+
+.member-right .text {
+    width: 100%;
+    max-width: 400px;
+    margin-right: 90px;
+}
+
+.member-right .text-last {
+    width: 100%;
+    max-width: 400px;
+    margin-right: 90px;
+}
+
+.frame .background {
+    position: absolute;
+    width: 100%;
+    height: 260px;
+    top: 65%;
+    left: 0;
+    background-color: #e6e6e6;
+    z-index: -1;
+}
+
+.frame .background-last {
+    position: absolute;
+    width: 100%;
+    height: 260px;
+    left: 0;
+    top: 65%;
+    bottom: auto;
+    background-color: #e6e6e6;
+    margin-top: auto;
+    z-index: -1;
+}
+
+/*------------------------------------
+SP
+------------------------------------*/
+@media screen and (max-width: 767px) {
+    body {
+        background-color: #fff;
+    }
+
+    /*----------------------------------
+    hamburger
+    ----------------------------------*/
+    #header {
+        position: relative;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #header img {
+        width: 73px;
+        height: 24px;
+        margin:0;
+    }
+
+    #navi {
+        width: 375px;
+        height: 768px;
+        padding: 10px 0 10px 14px;
+        top: 0;
+        left: 0;
+        position: fixed;
+        opacity: 0;
+        transition:opacity 0.6s ease, visibility 0.6s ease;
+        visibility: hidden;
+        background-color: #fff;
+}
+
+    #navi.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu {
+        position:fixed;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .SP-menu {
+        opacity: 1;
+        visibility: visible;
+        margin-top: 133px;
+    }
+
+    .SP-menu a {
+        color: #333;
+        text-decoration: none;
+    }
+
+    .SP-menu li {
+        color: #333;
+        padding: 20px 202px 20px 60px;
+        border-bottom: solid 1px #333;
+        list-style: none;
+        margin-left: -55px;
+    }
+
+    .SP-menu li:first-child {
+        border-top: solid 1px #333;
+    }
+
+    /*----------------------------------------
+    ハンバーガーメニューが閉じてる時
+    ----------------------------------------*/
+    .hamburger {
+        width: 40px;
+        height: 25px;
+        position: relative;
+        position:fixed;
+        cursor: pointer;
+        top: 10px;
+        right: 0;
+        margin-right: 20px;
+    }
+
+    .hamburger:hover {
+        opacity: 0.7;
+    }
+
+    .hamburger span {
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background: #333;
+        transition: 0.3s ease-in-out;
+    }
+
+    .hamburger span:first-child {
+        top:0;
+    }
+
+    .hamburger span:nth-child(2) {
+        top: 50%;
+    }
+
+    .hamburger span:last-child {
+        top: 100%;
+    }
+
+    /*----------------------------------------
+    ハンバーガーメニューが開いてる時
+    ----------------------------------------*/
+    .hamburger.active span:first-child {
+        top: 50%;
+        transform: rotate(45deg);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:last-child {
+        top: 50%;
+        transform: rotate(-45deg);
+    }
+
+    /*-----------------------------------------
+    代表 CEO
+    -----------------------------------------*/
+    #ceo {
+        margin-top: 89px;
+    }
+
+    .greeting {
+        flex-direction: column-reverse;
+        padding: 0 92px;
+        margin: 0 auto 0 auto;
+    }
+
+    .greeting .text {
+        margin: auto;
+        border-bottom: solid 1px #333;
+    }
+
+    .greeting .image {
+        text-align: center;
+    }
+
+    .background,
+    .background-last {
+        display: none;
+    }
+
+    #ceo .title{
+        font-size: 1.625rem;
+        text-align: center;
+        margin: 0 auto 39px auto;
+    }
+
+    .profile, .emotion,
+    .amusing {
+        display: block;
+        font-size: 0.875rem;
+        padding: 0 28px 0 20px;
+    }
+
+    /*------------------------------------
+    社員 MEMBER
+    ------------------------------------*/
+    .member {
+        margin-top: 33px;
+    }
+
+    /*------------------------------------
+    画像　左
+    ------------------------------------*/
+    .member .title {
+        font-size: 1.625rem;
+        text-align: center;
+        margin: 0 auto -6px auto;
+    }
+
+    .member-left {
+        background-color: #fff;
+        flex-direction: column;
+        padding: 0 92px;
+        margin: 0 auto 0 auto;
+    }
+
+    .member .image {
+        text-align: center;
+        margin-top: 45px;
+    }
+
+    .member .text {
+        margin: auto;
+        border-bottom: solid 1px #333;
+    }
+
+    /*------------------------------------
+    画像　右
+    ------------------------------------*/
+    .member-right {
+        background-color: #fff;
+        flex-direction: column-reverse;
+        padding: 0 92px;
+        margin: 0 auto 0 auto;
+    }
+
+    .member-right .image {
+        text-align: center;
+        margin-top: 45px;
+    }
+
+    .member-right .text {
+        margin: auto;
+        border-bottom: solid 1px #333;
+    }
+
+    .member-right .text-last {
+        margin: auto;
+        border-bottom: solid 1px #333;
+        margin-bottom: 129px;
+    }
+}
