@@ -27,6 +27,7 @@ header
     align-items: center;
     background-color: #fff;
     margin: -10px -10px;
+    z-index: 20;
 }
 
 #header img{
