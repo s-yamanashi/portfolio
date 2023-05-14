@@ -125,6 +125,11 @@ a {
     padding-bottom: 70px;
 }
 
+.espresso,.milktea,.appletea,.matchalate {
+    flex-basis: 332px;
+    padding-bottom: 70px;
+}
+
 #drink img {
     width: 85%;
     height: 85%;
@@ -144,6 +149,11 @@ a {
     padding-bottom: 70px;
 }
 
+.sandwich,.tomatopasta,.gratin,.pilaf {
+    flex-basis: 332px;
+    padding-bottom: 70px;
+}
+
 #meal img {
     width: 85%;
     height: 85%;
@@ -159,6 +169,11 @@ a {
 }
 
 .cheesecake,.chococake,.monbran,.pancake {
+    flex-basis: 332px;
+    padding-bottom: 70px;
+}
+
+.appletart,.millefeuille,.matchacake,.comport {
     flex-basis: 332px;
     padding-bottom: 70px;
 }
