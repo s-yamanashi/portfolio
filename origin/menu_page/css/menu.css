@@ -120,12 +120,8 @@ a {
     margin-bottom: 100px;
 }
 
-.caffee,.tea,.cafelate,.cocoa {
-    flex-basis: 332px;
-    padding-bottom: 70px;
-}
-
-.espresso,.milktea,.appletea,.matchalate {
+.caffee,.tea,.cafelate,.cocoa, 
+.espresso,.milktea,.appletea,.matchalate{
     flex-basis: 332px;
     padding-bottom: 70px;
 }
@@ -144,11 +140,7 @@ a {
     margin-bottom: 100px;
 }
 
-.hotsand,.pasta,.omrice,.carry {
-    flex-basis: 332px;
-    padding-bottom: 70px;
-}
-
+.hotsand,.pasta,.omrice,.carry,
 .sandwich,.tomatopasta,.gratin,.pilaf {
     flex-basis: 332px;
     padding-bottom: 70px;
@@ -168,12 +160,8 @@ a {
     margin-bottom: 100px;
 }
 
-.cheesecake,.chococake,.monbran,.pancake {
-    flex-basis: 332px;
-    padding-bottom: 70px;
-}
-
-.appletart,.millefeuille,.matchacake,.comport {
+.cheesecake,.chococake,.monbran,.pancake,
+.appletart,.millefeuille,.matchacake,.comport{
     flex-basis: 332px;
     padding-bottom: 70px;
 }
